@@ -65,10 +65,15 @@ input.radiobutton{
 .sdbox{
     background-color: red;
 }
-input + label:hover{
+.answerbox label:hover{
     text-decoration: underline;
     text-decoration-color: whitesmoke;
 }
-input:checked + label{
+.answerbox input:checked + label{
+    text-decoration: none;
     border: solid rgb(255, 255, 255);
+}
+footer{
+    margin: auto;
+    font-size: small;
 }
