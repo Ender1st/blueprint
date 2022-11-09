@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>8 Values Quiz</h1>
-    <form>
+    <form class="box" id="quizform">
         <p class="questionbox">Question 1. Oppression by corporations is more of a concern than oppression by governments.</p>
         <div class="answerbox">
             <input class="radiobutton" type="radio" name="q01" value="sa" id="q01sa">
@@ -60,7 +60,7 @@
             </label>
         </div>
         <hr>
-        <p class="questionbox">Question 3. It is necessary for the government to intervene in the economy to protect consumers.</p>
+        <p class="questionbox">Question 3. The freer the markets, the freer the people.</p>
         <div class="answerbox">
             <input class="radiobutton" type="radio" name="q03" value="sa" id="q03sa">
             <label for="q03sa" class="sabox">
@@ -84,10 +84,34 @@
             </label>
         </div>
         <hr>
-        <div class="submitbutton">
-          <button type="submit">Submit</button>
+        <p class="questionbox">Question 4. It is better to maintain a balanced budget than to ensure welfare for all citizens4</p>
+        <div class="answerbox">
+            <input class="radiobutton" type="radio" name="q04" value="sa" id="q04sa">
+            <label for="q04sa" class="sabox">
+                Strongly Agree
+            </label>
+            <input class="radiobutton" type="radio" name="q04" value="a", id="q04a">
+            <label for="q04a" class="abox">
+                Agree
+            </label>
+            <input class="radiobutton" type="radio" name="q04" value="nu" id="q04nu">
+            <label for="q04nu" class="nubox">
+                Neutral/Unsure
+            </label>
+            <input class="radiobutton" type="radio" name="q04" value="d" id="q04d">
+            <label for="q04d" class="dbox">
+                Disagree
+            </label>
+            <input class="radiobutton" type="radio" name="q04" value="sd" id="q04sd">
+            <label for="q04sd" class="sdbox">
+                Strongly Disagree
+            </label>
         </div>
-      </form>
-      
+        <br>
+    </form>
+    <div class="footbutton">
+        <button form="quizform" type="submit">Submit</button>
+        <button form="quizform" type="reset">Reset</button>
+    </div>
 </body>
 </html>

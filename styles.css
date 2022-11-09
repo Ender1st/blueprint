@@ -1,6 +1,9 @@
-html{
-    background-color: whitesmoke;
+body{
+    line-height:50px;
     font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h1{
     display: flex;
@@ -8,6 +11,11 @@ h1{
 }
 hr{
     width: 400px;
+}
+.box{
+    margin: auto;
+    background-color: whitesmoke;
+    width: 65%;
 }
 input.radiobutton{
     display: none;
@@ -21,12 +29,22 @@ input.radiobutton{
     display: flex;
     color: whitesmoke;
     flex-direction: column;
-    width: 200px;
+    width: 240px;
     margin: 0 auto;
 }
-.submitbutton{
+.footbutton{
+    width: 320px;
+    height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.footbutton button{
+    flex-basis: 140px;
+    width: 100px;
+    height: 40px;
+    font-size: medium;
 }
 .answerbox label{
     display: flex;
@@ -46,6 +64,10 @@ input.radiobutton{
 }
 .sdbox{
     background-color: red;
+}
+input + label:hover{
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
 }
 input:checked + label{
     border: solid rgb(255, 255, 255);
